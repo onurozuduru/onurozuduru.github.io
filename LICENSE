@@ -1,17 +1,20 @@
-Copyright (C) 2014  Jacob Tomlinson
+Copyright (C) 2015  Onur Ozuduru
 
 The contents of this website, which consists of the files in
  * _config.yml
  * _data
- * _drafts
  * _posts
+ * assets
+ * favicons
+ * index.html
+ * aboutme.html
 
-are copyrighted and sole property of its author Jacob Tomlinson. It may not be
-used, modified, syndicated or distributed without expressed permission from
-the author.
+are licensed under the Creative Commons Attribution 4.0 International License.
+To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
 
-However the website theme built using jekyll is Open Source under the following
-GPLv3 license.
+
+The website theme is built using jekyll by Jacob Tomlinson and modified by Onur Ozuduru
+is Open Source under the following GPLv3 license.
 
 
 This program is free software: you can redistribute it and/or modify
