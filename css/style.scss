@@ -181,32 +181,67 @@ ul {
 		-moz-transition: 0.3s;
 		transition: 0.3s;
 	}
-
-	.fa-twitter:hover {
+	
+    //twitter
+    .fa-twr:before {
+        content: "\f099";
+    }
+    
+	.fa-twr:hover {
 		color: $twitter;
 	}
     
-    .fa-tumblr:hover {
+    //tumblr
+    .fa-tblr:before {
+        content: "\f173";
+    }
+    
+    .fa-tblr:hover {
 		color: $tumblr;
 	}
     
-	.fa-linkedin:hover {
+    //linkedin
+    .fa-lkdin:before {
+        content: "\f0e1";
+    }
+    
+	.fa-lkdin:hover {
 		color: $linkedin;
 	}
     
-	.fa-google-plus:hover {
+    //googleplus
+    .fa-ggl-pls:before {
+        content: "\f0d5";
+    }
+    
+	.fa-ggl-pls:hover {
 		color: $google-plus;
 	}
+	
+	//github
+	.fa-gtb-alt:before {
+        content: "\f113";
+    }
 
-	.fa-github-alt:hover {
+	.fa-gtb-alt:hover {
 		color: $github;
 	}
-
-	.fa-stack-overflow:hover {
+    
+    //stackoverflow
+    .fa-stk-overfl:before {
+        content: "\f16c";
+    }
+    
+	.fa-stk-overfl:hover {
 		color: $stack-overflow;
 	}
-
-	.fa-rss:hover {
+    
+    //rss
+    .fa-rs:before {
+        content: "\f09e";
+    }
+    
+	.fa-rs:hover {
 		color: $rss;
 	}
 }
@@ -859,34 +894,6 @@ ul {
 		-moz-transition: 0.3s;
 		transition: 0.3s;
 		color: $white;
-	}
-
-	.fa-twitter:hover {
-		color: $twitter;
-	}
-    
-    .fa-tumblr:hover {
-		color: $tumblr;
-	}
-    
-	.fa-linkedin:hover {
-		color: $linkedin;
-	}
-    
-	.fa-google-plus:hover {
-		color: $google-plus;
-	}
-
-	.fa-github-alt:hover {
-		color: $github;
-	}
-
-	.fa-stack-overflow:hover {
-		color: $stack-overflow;
-	}
-
-	.fa-rss:hover {
-		color: $rss;
 	}
 }
 
