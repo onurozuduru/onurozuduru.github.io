@@ -4,7 +4,7 @@ title:      Carte Noire in Action
 date:       2014-06-10 12:31:19
 summary:    See what the different elements looks like.
 categories: jekyll
-thumbnail: cogs
+thumbnail: file-text
 tags:
  - demo
  - action
@@ -23,7 +23,7 @@ works if <del>for some reason you need to update your post</del>. For consistenc
 
 Code blocks use the [peppermint][2] theme.
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 class Awesome < ActiveRecord::Base
   include EvenMoreAwesome
 
@@ -36,6 +36,10 @@ class Awesome < ActiveRecord::Base
   end
 end
 {% endhighlight %}
+
+<div class="github-code">
+{% include code_snippets/test.html %}
+</div>
 
 ```html
 <!DOCTYPE html>

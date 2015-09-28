@@ -2,12 +2,6 @@
 layout: default
 ---
 
-{% if page.minutes %}
-  {% assign minutes = page.minutes %}
-{% else %}
-  {% assign minutes = content | number_of_words | divided_by: 180 %}
-  {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
-{% endif %}
 
 <div class="container-fluid single">
   <div class="row">
@@ -26,30 +20,24 @@ layout: default
       <h1 class="header" itemprop="name">{{ page.title }}</h1>
 
       <div class="author">
-        <small><i>
+        <small><i><b>
           {% if page.author %}
           by
           <span itemprop="author">
-            {% if site.google_plus_link %}
-              <a rel="author" href="{{ site.google_plus_link }}">
+            {% if site.twitter_username %}
+              <a rel="author" href="http://twitter.com/{{ site.twitter_username }}" target="_new">
             {% endif %}
             <span itemprop="author" itemscope itemtype="http://schema.org/Person">
               <span itemprop="name">{{ page.author }}</span>
             </span>
-            {% if site.google_plus_link %}
+            {% if site.twitter_username %}
               </a>
             {% endif %}
           </span>
           {% endif %}
           on <span itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span>
           {% if page.categories != empty %} under {% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
-        </i></small>
-      </div>
-
-      <div class="read-time">
-        <small>
-          {{ minutes }} minute read
-        </small>
+        </b></i></small>
       </div>
 
       <div class="content-panel content">
@@ -70,12 +58,28 @@ layout: default
           </small>
         </div>
         {% endif %}
-
+        
+        {% if site.github_repository %}
+        <div class="row pull-notice">
+            <div class="col-sm-2" style="text-align:right;">
+                <img src="{{ site.baseurl }}/assets/icons/git-branch-24.png">
+            </div>
+            <div class="col-sm-8" style="text-align:center;">
+                <i>Found a mistake in this article? Well, 
+                    <a href="{{ site.github_repository }}/blob/master/{{ page.path }}" target="_new">let's edit together</a>!
+                </i>
+            </div>
+            <div class="col-sm-2" style="text-align:left;">
+                <img src="{{ site.baseurl }}/assets/icons/git-pull-request-24.png">
+            </div>
+        </div>
+        {% endif %}
+        
       </div>
 
       <div class="content-panel feedback">
         I <i class="fa fa-heart"></i> feedback.<br />
-        Let me know what you think of this article on twitter <a href="http://www.twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a> or leave a comment below!
+        Let me know what you think of this article on twitter <a href="http://www.twitter.com/{{ site.twitter_username }}" target="_new">@{{ site.twitter_username }}</a> or leave a comment below!
       </div>
 
       {% if site.disqus_account %}
@@ -133,7 +137,7 @@ layout: default
 <script type="text/javascript">
 /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 function disqus_config() { this.experiment.enable_scroll_container = true; }
-var disqus_shortname = "{{ site.disqus_account }}"; // required: replace example with your forum shortname
+var disqus_shortname = "ozuduru"; // required: replace example with your forum shortname
 /* * * DON'T EDIT BELOW THIS LINE * * */
 (function() {
   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

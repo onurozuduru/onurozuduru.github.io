@@ -1,0 +1,64 @@
+---
+layout: default
+title:  About Me
+tags:
+ - about
+ - me
+ - onur
+ - ozuduru
+---
+
+
+<div class="container-fluid single">
+  <div class="row">
+    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
+      <div class="thumb">
+        <i class="fa fa-user fa-4x"></i>
+      </div>
+
+      <h1 class="header" itemprop="name">About Me</h1>
+
+      <div class="content-panel content">
+        <div>
+            <p><i>TODO</i></p>
+        </div>
+        
+        <div class="follow-me">
+            {% include social_links.html %}
+        </div>
+        
+        {% if page.tags and page.tags.size > 0 %}
+        <div class="tags">
+          <small>
+          <i class="fa fa-tags"></i>
+            {{ page.tags | join: ', ' }}
+          </small>
+        </div>
+        {% endif %}
+        
+      </div>
+      
+      <div class="about">
+        <div class="content-panel">
+            <div class="articles">
+
+              <h2>Latest Articles</h2>
+
+              <ul>
+                  {% for post in site.posts | limit: site.post_limit %}
+                      <li>
+                          <a href="{{ post.url | prepend: site.baseurl }}" data-toggle="tooltip" data-placement="auto left" title="{{ post.summary }}">{{ post.title }}</a>
+                          <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
+                      </li>
+                  {% endfor %}
+                  <li>
+                      <small><i><a href="{{ site.baseurl }}/posts/">more...</a></i></small>
+                  </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

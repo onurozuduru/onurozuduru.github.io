@@ -7,6 +7,7 @@
 /* Colours */
 $twitter:        #6dabda;
 $linkedin:       #2b77b1;
+$tumblr:         #529ECC;
 $google-plus:    #c95644;
 $github:         #f6c2a4;
 $stack-overflow: #c98b3b;
@@ -42,7 +43,7 @@ html {
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	background-color: $dark;
+	background-color: #D2D2D6;
 	color: $white;
 	font-size: 16px;
 	height: 100%;
@@ -55,7 +56,7 @@ a, a:active {
 }
 
 a:hover {
-	color: $dark-blue;
+	color: $red;
 	text-decoration: none;
 }
 
@@ -79,7 +80,7 @@ ul {
 		}
 
 		a:hover {
-			color: $dark-blue;
+			color: $red;
 			text-decoration: none;
 		}
 	}
@@ -98,12 +99,17 @@ ul {
 	margin-top: 20px;
 	margin-left: -0%;
 	width: 100%;
+	color: $darker;
 
 	@media (min-width: $screen-sm-min) {
 		font-size: 62px;
 		margin-left: -10%;
 		width: 120%;
 	}
+}
+
+.fa-4x {
+    color: $darker;
 }
 
 .menu-button {
@@ -179,11 +185,15 @@ ul {
 	.fa-twitter:hover {
 		color: $twitter;
 	}
-
+    
+    .fa-tumblr:hover {
+		color: $tumblr;
+	}
+    
 	.fa-linkedin:hover {
 		color: $linkedin;
 	}
-
+    
 	.fa-google-plus:hover {
 		color: $google-plus;
 	}
@@ -295,7 +305,7 @@ ul {
 				font-size: 24px;
 
 				a:hover {
-					color: $light-medium;
+					color: $red;
 				}
 
 				small {
@@ -522,6 +532,15 @@ ul {
 			font-size: 20px;
 			text-align: center;
 			margin-bottom: 0px;
+			color: $medium;
+			
+			a {
+			    color: $dark-blue;
+			}
+			
+			a:hover {
+			    color: $red;
+			}
 		}
 
 		.read-time {
@@ -529,6 +548,7 @@ ul {
 			text-align: center;
 			margin-bottom: 10px;
 			font-weight: 400;
+			color: $medium;
 			@media (min-width: $screen-sm-min) {
 				margin-bottom: 40px;
 			}
@@ -713,7 +733,7 @@ ul {
 		}
 
 		a:hover {
-			color: $dark-blue;
+			color: $red;
 		}
 	}
 
@@ -731,7 +751,7 @@ ul {
 		}
 
 		a:hover {
-			color: $light;
+			color: $red;
 		}
 	}
 
@@ -747,7 +767,7 @@ ul {
 		}
 
 		a:hover {
-			color: $light;
+			color: $red;
 		}
 	}
 
@@ -809,9 +829,119 @@ ul {
 	}
 
 	div {
-		color: $light-medium;
+		color: $medium;
 		text-align: center;
 		margin-top: 20px;
 		margin-bottom: 20px;
+		
+		a {
+		    color: $dark-blue;
+		}
+		
+		a:hover {
+		    color: $red;
+		}
+	}
+}
+
+.github-code {
+    background-color: #EFEFEF;
+    line-height: 80%;
+}
+
+.pull-notice {
+    font-size: 16px;
+}
+
+.follow-me {
+    .fa {
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		transition: 0.3s;
+		color: $white;
+	}
+
+	.fa-twitter:hover {
+		color: $twitter;
+	}
+    
+    .fa-tumblr:hover {
+		color: $tumblr;
+	}
+    
+	.fa-linkedin:hover {
+		color: $linkedin;
+	}
+    
+	.fa-google-plus:hover {
+		color: $google-plus;
+	}
+
+	.fa-github-alt:hover {
+		color: $github;
+	}
+
+	.fa-stack-overflow:hover {
+		color: $stack-overflow;
+	}
+
+	.fa-rss:hover {
+		color: $rss;
+	}
+}
+
+.license {
+    font-size: 12px;
+    color: $dark;
+}
+
+.about {
+    .articles {
+		text-align: center;
+		font-size: 20px;
+
+		h2 {
+			margin-bottom: 30px;
+			color: $light-blue;
+			font-size: 26px;
+		}
+
+		ul {
+
+			padding: 0px;
+
+			li {
+				margin-bottom: 20px;
+				font-size: 24px;
+
+				a:hover {
+					color: $red;
+				}
+
+				small {
+					font-size: 14px;
+					margin-top: -10px;
+					padding-top: 0px;
+					color: $light-medium;
+				}
+
+			}
+
+			li:nth-last-of-type(1) {
+
+				small {
+					font-size: 16px;
+				}
+
+			}
+		}
+
+		a, a:active {
+			color: $white;
+		}
+
+		a:hover {
+			color: $light-blue;
+		}
 	}
 }

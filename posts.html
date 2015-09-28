@@ -20,7 +20,8 @@ layout: default
       {% endif %}
 
           <li>
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a href="{{ post.url | prepend: site.baseurl }}" data-toggle="tooltip" data-placement="auto left" title="{{ post.summary }}">{{ post.title }}</a>
+            <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
           </li>
       {% if forloop.last %}
         </ul>

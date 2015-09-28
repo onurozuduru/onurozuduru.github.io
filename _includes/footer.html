@@ -1,9 +1,17 @@
 <div class="footer clearfix">
-  <div class="col-md-6">
-    {{ site.footer_left }}
+  <div class="row license">
+    Copyright <img height="12px" src="{{ site.baseurl }}/assets/icons/copyright_symbol.png" /> 2015 <a href="http://ozuduru.com">Onur Özüduru</a>
+    <br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Written contents of this article</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="ozuduru.com" property="cc:attributionName" rel="cc:attributionURL">Onur Ozuduru</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    <br><a rel="license" href="https://www.gnu.org/licenses/gpl-3.0.txt"><img alt="GPLv3 License" height="20px" src="https://www.gnu.org/graphics/gplv3-88x31.png" /></a>Code snippets and theme are under the <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GPLv3 license</a>, unless otherwise noted.
+    <br><img height="14px" src="{{ site.baseurl }}/assets/icons/copyright_symbol.png" /> Source codes and other contents might have their own copyright licenses, please visit related source links to see their licenses.
   </div>
-  <div class="col-md-6">
-    {{ site.footer_right }}
+  <div class="row">
+      <div class="col-md-6">
+        {{ site.footer_left }}
+      </div>
+      <div class="col-md-6" style="text-align:right">
+        {{ site.footer_right }}
+      </div>
   </div>
 </div>
 
@@ -24,19 +32,38 @@
    });
 </script>
 
-{% if site.google_analytics %}
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-          _gaq.push(['_trackPageview']);
-  (function () {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-  })();
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
 </script>
-{% endif %}
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32721410 = new Ya.Metrika({
+                    id:32721410,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32721410" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
