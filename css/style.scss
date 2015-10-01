@@ -145,7 +145,13 @@ ul {
 	p {
 		margin-bottom: 5px;
 	}
-
+	
+    hr {
+        height:2px;
+        border:0 none;
+        background-color: $light-blue;
+    }
+    
 	a, a:active {
 		color: $white;
 	}
