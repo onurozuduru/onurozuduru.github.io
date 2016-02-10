@@ -75,7 +75,7 @@ can see it does exactly what algorithm says between while loop. In here *current
 that does same thing with [Timer][6] to simulate the process. If you need more information about swing timers please visit 
 [How to Use Swing Timers][7] page of Oracle's Java Tutorials.
 
-```java
+~~~ java
 public void generate() {
 	current = unvisitedCells.remove(getRandomInt(unvisitedCells.size()));
 	current.setStatus(Status.VISITED);
@@ -107,7 +107,7 @@ public void generate() {
 	start.setBackground(Color.GREEN);
 	finish.setBackground(Color.RED);
 }
-```
+~~~
 
 ### About GUI
 
