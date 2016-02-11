@@ -2,7 +2,7 @@
 layout:     post
 title:      Recursive Backtracking Maze Generator in Java with GUI
 summary:    Simple maze generator and basic GUI in Java.
-thumbnail:  code
+thumbnail:  file-code-o
 tags:
  - java
  - backtracking
