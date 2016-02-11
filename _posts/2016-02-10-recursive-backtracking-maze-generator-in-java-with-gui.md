@@ -48,7 +48,7 @@ Actually problem is very simple. We want to generate a maze which has only one e
 between entrance and exit points.
 
 There are lots of algorithms to do that (see [here][2],) but since it is easier to implement and understand than others, I have used recursive
-backtracking method (or if you look in a general perspective [DFS -Depth First Search-][3] algorithm.)
+backtracking method (or if you look in a general perspective *DFS -Depth First Search-*{: .wikibox rel="depth-first search"} algorithm.)
 
 ### Recursive Backtracking Algorithm
 
@@ -63,17 +63,17 @@ backtracking method (or if you look in a general perspective [DFS -Depth First S
         1. Pop a cell from the stack
         2. Make it the current cell
         
-*Source: [Wikipedia][4]*
+*Source: [Wikipedia][3]*
 
 ### Implementation
 
-Implementation of the above algorithm is could be found under [Maze.java][5] file, as `generate()` method. As you
+Implementation of the above algorithm is could be found under [Maze.java][4] file, as `generate()` method. As you
 can see it does exactly what algorithm says between while loop. In here *current*, *finish* and *start* are `Cell` objects and 
 *unvisitedCells* is an `ArrayList` of `Cell`s (for more about structures and user defined objects, please keep reading.)
 
 `generate()` method is called when user click on "Generate" button however, there is one additional method which is `generateAndSimulate()`
-that does same thing with [Timer][6] to simulate the process. If you need more information about swing timers please visit 
-[How to Use Swing Timers][7] page of Oracle's Java Tutorials.
+that does same thing with [Timer][5] to simulate the process. If you need more information about swing timers please visit 
+[How to Use Swing Timers][6] page of Oracle's Java Tutorials.
 
 ~~~ java
 public void generate() {
@@ -142,9 +142,8 @@ This is the first blog post of mine, so if you have time, please share your idea
 
 [1]: https://github.com/onurozuduru/maze-generator
 [2]: https://en.wikipedia.org/wiki/Maze_generation_algorithm
-[3]: http://www.cs.toronto.edu/~heap/270F02/node36.html
-[4]: https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_backtracker
-[5]: https://github.com/onurozuduru/maze-generator/blob/master/src/com/ozuduru/mazegenerator/Maze.java
-[6]: https://docs.oracle.com/javase/7/docs/api/javax/swing/Timer.html
-[7]: https://docs.oracle.com/javase/tutorial/uiswing/misc/timer.html
+[3]: https://en.wikipedia.org/wiki/Maze_generation_algorithm#Recursive_backtracker
+[4]: https://github.com/onurozuduru/maze-generator/blob/master/src/com/ozuduru/mazegenerator/Maze.java
+[5]: https://docs.oracle.com/javase/7/docs/api/javax/swing/Timer.html
+[6]: https://docs.oracle.com/javase/tutorial/uiswing/misc/timer.html
 
