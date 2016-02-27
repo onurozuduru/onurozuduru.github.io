@@ -15,13 +15,13 @@ post_limit: 5
 twitter_username: onurozuduru
 github_username: onurozuduru
 linkedin_link: https://linkedin.com/in/onurozuduru/
-tumblr_link: https://onurozuduru.tumblr.com/
+tumblr_link: http://onurozuduru.tumblr.com/
 google_plus_link:
 stackoverflow_link:
 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> using <a href=\"https://jekyllrb.com/\">Jekyll</a> and theme by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/onurozuduru/onurozuduru.github.io\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+footer_left: "Made with <i class=\"fa fa-heart\"></i> using <a href=\"https://jekyllrb.com/\" target=\"_blank\">Jekyll</a> and theme by <a href=\"https://twitter.com/_JacobTomlinson\" target=\"_blank\">Jacob Tomlinson</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/onurozuduru/onurozuduru.github.io\" target=\"_blank\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
 markdown: kramdown
