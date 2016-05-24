@@ -207,7 +207,7 @@ on `lightdm.conf`
 ##### One Login Script for Screen Brightness and Keyboard Backlight
 
 To fix keyboard backlight and screen brightness problems at the same time,
-create only one login loop file. And make it executable. Then add your file
+create only one login script file. And make it executable. Then add your file
 path to `lightdm.conf` file.
 
 There are my script and .conf files.
