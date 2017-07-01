@@ -10,7 +10,7 @@ tags:
  - project
 ---
 
-I made a small project to see documentation process for FabLab project. And you 
+I made a small project to see documentation process for *FabLab*{: .wikibox rel="Fab lab"} project. And you 
 can find my documentation in below.
 
 # Laser Cut Coaster
